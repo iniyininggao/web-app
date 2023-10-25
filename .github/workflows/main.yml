@@ -45,7 +45,7 @@ jobs:
 
   audit:
     runs-on: ubuntu-latest
-    if: github.ref=='refs/heads/main'
+    if: github.ref=='refs/heads/main' || github.ref == 'refs/heads/release'
   
     steps:
       - name: Checkout code
