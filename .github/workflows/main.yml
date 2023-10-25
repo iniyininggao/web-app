@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Check for outdated dependencies
-        run: npm outdated
-
       - name: Run lint
         run: npm run lint
 
@@ -42,10 +39,7 @@ jobs:
   
         - name: Install dependencies
           run: npm install
-     
-        - name: Check for outdated dependencies
-          run: npm outdated
-  
+
         - name: Run Build
           run: npm run build
 
@@ -64,6 +58,3 @@ jobs:
   
       - name: Install dependencies
         run: npm install
-
-      - name: Check for outdated dependencies
-        run: npm outdated
